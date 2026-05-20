@@ -4,8 +4,8 @@ require 'Model.php';
 date_default_timezone_set('Asia/Makassar');
 
 $id = '';
-$tgl_pinjam = date('Y-m-d');
-$tgl_kembali = date('Y-m-d', strtotime('+7 days'));
+$tgl_pinjam = date('Y-m-d'); 
+$tgl_kembali = date('Y-m-d', strtotime('+7 days')); 
 $id_member = '';
 $id_buku = '';
 

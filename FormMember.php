@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
         $nomor = $data['nomor_member'];
         $alamat = $data['alamat'];
         $tgl_daftar = date('Y-m-d\TH:i', strtotime($data['tgl_mendaftar'])); 
-        $tgl_bayar = $data['tgl_bayar'];
+        $tgl_bayar = $data['tgl_terakhir_bayar'];
     }
 }
 
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <input type="datetime-local" name="tgl_daftar" class="form-control" value="<?= $tgl_daftar ?>" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Tanggal Bayar</label>
+                                <label class="form-label">Tanggal Terakhir Bayar</label>
                                 <input type="date" name="tgl_bayar" class="form-control" value="<?= $tgl_bayar ?>" required>
                             </div>
                             

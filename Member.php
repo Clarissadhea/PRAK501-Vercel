@@ -30,8 +30,8 @@ if (isset($_GET['delete'])) {
                             <th>Nama</th>
                             <th>Nomor Member</th>
                             <th>Alamat</th>
-                            <th>Tanggal Mendaftar</th>
-                            <th>Tanggal Bayar</th>
+                            <th>Tgl Mendaftar</th>
+                            <th>Tgl Terakhir Bayar</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -43,7 +43,7 @@ if (isset($_GET['delete'])) {
                             <td><?= $row['nomor_member'] ?></td>
                             <td><?= $row['alamat'] ?></td>
                             <td><?= $row['tgl_mendaftar'] ?></td>
-                            <td><?= $row['tgl_bayar'] ?></td>
+                            <td><?= $row['tgl_terakhir_bayar'] ?></td>
                             <td>
                                 <a href="FormMember.php?id=<?= $row['id_member'] ?>" class="btn btn-sm btn-warning">Edit</a>
                                 <a href="Member.php?delete=<?= $row['id_member'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin hapus data?')">Hapus</a>
