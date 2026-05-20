@@ -11,7 +11,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
         color: #333;
     }
 
-    /* Desain Navbar Custom */
     .navbar-custom {
         background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -33,7 +32,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
         transform: translateY(-2px);
     }
 
-    /* Desain Card & Tabel */
     .card-custom {
         border: none;
         border-radius: 16px;
@@ -62,7 +60,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
         background-color: #f8fafc;
     }
 
-    /* Desain Tombol */
     .btn-custom {
         border-radius: 8px;
         font-weight: 500;
@@ -89,7 +86,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
         font-size: 0.875rem;
     }
 
-    /* Desain Form Input */
     .form-control {
         border-radius: 8px;
         padding: 10px 15px;
