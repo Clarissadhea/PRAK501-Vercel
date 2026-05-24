@@ -1,6 +1,6 @@
 <?php
 require 'Model.php';
-$bukus = getBuku();
+$buku = getBuku();
 
 if (isset($_GET['delete'])) {
     deleteBuku($_GET['delete']);
@@ -38,7 +38,7 @@ if (isset($_GET['delete'])) {
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($bukus as $row) : ?>
+                        <?php foreach ($buku as $row) : ?>
                         <tr>
                             <td class="fw-bold text-secondary">#<?= $row['id_buku'] ?></td>
                             <td class="fw-medium text-dark"><?= $row['judul_buku'] ?></td>
